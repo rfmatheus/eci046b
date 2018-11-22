@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/universidade.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ensina -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ensina">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Estuda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Estuda">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#matricula_aluno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#matricula_aluno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#num_servidor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#num_servidor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#primeiro_nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#primeiro_nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#ultimo_nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#ultimo_nome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gestão -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gestão">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ontologias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ontologias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Disciplinas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+        <Estuda rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gest20182"/>
+        <Estuda rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20181"/>
+        <matricula_aluno rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</matricula_aluno>
+        <primeiro_nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">João Pedro</primeiro_nome>
+        <ultimo_nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">da Silva</ultimo_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#A103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gest20181 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gest20181">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gestão"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gest20182 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gest20182">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gestão"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20181 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20181">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ontologias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20182 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20182">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ontologias"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#P101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#P101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#P102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#P102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor"/>
+        <Ensina rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20181"/>
+        <Ensina rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ont20182"/>
+        <num_servidor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11000</num_servidor>
+        <primeiro_nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renato Fabiano</primeiro_nome>
+        <ultimo_nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matheus</ultimo_nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Aluno"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Gestão"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Ontologias"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2018/7/untitled-ontology-3#Professor"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
