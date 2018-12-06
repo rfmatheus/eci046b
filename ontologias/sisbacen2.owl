@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#"
+     xml:base="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:sisbacen="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-38="http://www.semanticweb.org/lenovo/ontologies/2018/11/untitled-ontology-38#">
+    <owl:Ontology rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#administradaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#administradaPor">
+        <owl:inverseOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#temAdministrador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#assinadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#assinadoPor">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato"/>
+        <rdfs:range rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#temAdministrador -->
+
+    <owl:ObjectProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#temAdministrador">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Privada"/>
+        <rdfs:range rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaFisica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#temAreaAtuacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#temAreaAtuacao">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+        <rdfs:range rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AreaAtuacao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CNPJ -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CNPJ">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato"/>
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CNPJcontratante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CNPJcontratante">
+        <rdfs:subPropertyOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CNPJ"/>
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CPF -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CPF">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato"/>
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaFisica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CPFcontratante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CPFcontratante">
+        <rdfs:subPropertyOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CPF"/>
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#areaAtuacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#areaAtuacao">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+        <skos:prefLabel rdf:resource=""/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#nome">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#numeroContrato -->
+
+    <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#numeroContrato">
+        <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AreaAtuacao -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AreaAtuacao">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Assunto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Assunto -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Assunto">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#BancoCentral -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#BancoCentral">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Publica"/>
+        <owl:disjointWith rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#IF"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#EconomiaMista -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#EconomiaMista">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#IF -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#IF">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Privada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses"/>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao">
+        <owl:equivalentClass rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica"/>
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaFisica -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaFisica">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa"/>
+        <owl:disjointWith rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Privada -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Privada">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Publica -->
+
+    <owl:Class rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Publica">
+        <rdfs:subClassOf rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AT001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AT001">
+        <rdf:type rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#AreaAtuacao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CT001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CT001">
+        <rdf:type rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen"/>
+        <CNPJcontratante rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22222222222</CNPJcontratante>
+        <CPFcontratante rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11111111111</CPFcontratante>
+        <numeroContrato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33333333333</numeroContrato>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PF001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PF001">
+        <rdf:type rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaFisica"/>
+        <CPF rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11111111111</CPF>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joao da Silva</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PJ001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PJ001">
+        <rdf:type rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PessoaJuridica"/>
+        <CNPJ rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22222222222</CNPJ>
+        <nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banco do Povo</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Contrato"/>
+            <rdf:Description rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
+            <rdf:Description rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Pessoa"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
