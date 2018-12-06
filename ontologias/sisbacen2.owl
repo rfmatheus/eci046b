@@ -117,7 +117,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#areaAtuacao">
         <rdfs:domain rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#Organizacao"/>
-        <skos:prefLabel rdf:resource=""/>
+        <skos:prefLabel rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl"/>
     </owl:DatatypeProperty>
     
 
@@ -294,6 +294,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#CT001">
         <rdf:type rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#ContratoSisbacen"/>
+        <assinadoPor rdf:resource="http://www.pesquisaacademica.com.br/rfmatheus/ontologias/sisbacen.owl#PF001"/>
         <CNPJcontratante rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22222222222</CNPJcontratante>
         <CPFcontratante rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11111111111</CPFcontratante>
         <numeroContrato rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33333333333</numeroContrato>
